@@ -1,0 +1,17 @@
+{% extends "admin/base.html" %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">Sistema Crown</a></h1>
+{% endblock %}
+
+{% block extrastyle %}<style>
+    #header {
+       background-color: #b93b3b;
+       color: white;
+    }
+</style>{% endblock %}
+
+
+{% block nav-global %}{% endblock %}
